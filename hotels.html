@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Sedona</title>
+</head>
+<body style="background-color: aquamarine">
+
+  <!-- Шапка -->
+
+   <header class="main-header container">
+      <nav class="nav-container">
+         <img src="img/Logo.png" width="138" height="80" alt="City of Sedona">
+         <ul class="nav-menu">
+             <li class="nav-item"><a href="#">ИНФОРМАЦИЯ</a></li>
+             <li class="nav-item"><a href="#">ФОТО И ВИДЕО</a></li>
+             <li class="nav-item"><a href="#">КАРТА ШТАТА</a></li>
+             <li class="nav-item"><a class="nav-current" href="#">ГОСТИНИЦЫ</a></li>
+         </ul>
+      </nav>
+   </header>
+
+  <!-- Контент -->
+
+   <main class="container">
+      <section class="form-filter-container">
+         <h1 class="visually-hidden">Выбор Гостиницы</h1>
+         <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="form-group">
+                <legend class="group-title">ИНФРАСТРУКТУРА:</legend>
+                <p class="group-item">
+                   <input type="checkbox" name="basein" id="basein-id" checked>
+                   <label for="basein-id">БАССЕЙН</label>
+                </p>
+                <p class="group-item">
+                   <input type="checkbox" name="parking" id="parking-id">
+                   <label for="parking-id">ПАРКОВКА</label>
+                </p>
+                <p class="group-item">
+                   <input type="checkbox" name="wifi" id="wifi-id">
+                   <label for="wifi-id">Wi-Fi</label>
+                </p>
+            </fieldset>
+            <fieldset class="form-group">
+                <legend class="group-title">ТИП ЖИЛЬЯ:</legend>
+                <p class="group-item">
+                   <input type="checkbox" name="hotel" id="hotel-id" checked>
+                   <label for="hotel-id">ГостиницА</label>
+                </p>
+                <p class="group-item">
+                   <input type="checkbox" name="motel" id="motel-id" checked>
+                   <label for="motel-id">МОТЕЛЬ</label>
+                </p>
+                <p class="group-item">
+                   <input type="checkbox" name="apar" id="apar-id" checked>
+                   <label for="apar-id">АПАРТАМЕНТЫ</label>
+                </p>
+            </fieldset>
+            <fieldset class="form-group">
+                <legend class="group-title">Стоимость в сутки (Р):</legend>
+                <div class="form-price-container">
+                    <span class="price-container-item">ОТ 0</span>
+                    <span class="price-container-item">ДО 3000</span>
+                </div>
+                <input type="range" name="price-range" min="0" max="3000" step="100">
+                <button class="button-form" type="button">ПОКАЗАТЬ</button>
+            </fieldset>
+         </form>
+      </section>
+
+      <section>
+          <h2 class="visually-hidden">Результаты поиска</h2>
+      </section>
+
+
+   </main>

@@ -92,7 +92,28 @@
       <section class="search-hotel">
           <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <div class="button-search">ПОИСК ГОСТИНИЦЫ В седоне</div>
+          <div class="search-form-container">
+             <button class="button-search">ПОИСК ГОСТИНИЦЫ В седоне</button>
+             <form class="search-modal" action="https://echo.htmlacademy.ru" method="post">
+                <p class="search-modal-item">
+                   <label for="date-in-id">Дата заезда:</label>
+                   <input type="text" name="date-in" id="date-in-id" placeholder="24 Апреля 2017">
+                </p>
+                <p class="search-modal-item">
+                   <label for="date-out-id">Дата Выезда:</label>
+                   <input type="text" name="date-out" id="date-out-id" placeholder="4 июля 2017">
+                </p>
+                <p class="search-modal-item">
+                   <label for="mans-id">Взрослые:</label>
+                   <input type="range" name="mans" id="mans-id" value="2" step="1">
+                </p>
+                <p class="search-modal-item">
+                   <label for="kids-id">Дети:</label>
+                   <input type="range" name="kids" id="kids-id" value="0" step="1">
+                </p>
+                <button class="form-button" type="submit">НАЙТИ</button>
+             </form>
+          </div>
           <div class="map">
               <img src="img/map.jpg" width="1200" height="591" alt="Map">
           </div>
