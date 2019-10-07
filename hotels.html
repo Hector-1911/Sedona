@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: aquamarine">
+<body class="hotels-page">
 
   <!-- Шапка -->
 
@@ -25,7 +28,7 @@
    <main class="container">
       <section class="form-filter-container">
          <h1 class="visually-hidden">Выбор Гостиницы</h1>
-         <form action="https://echo.htmlacademy.ru" method="post">
+         <form class="form-hotels" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form-group">
                 <legend class="group-title">ИНФРАСТРУКТУРА:</legend>
                 <p class="group-item">
@@ -71,33 +74,33 @@
       <section>
           <h2 class="visually-hidden">Результаты поиска</h2>
           <div class="sorting-container">
-             <b class="sorting-result">Найдено: 3</b>
+             <span class="sorting-result">Найдено: 3</span>
              <span class="sorting-text">СОРТИРОВКА:</span>
-             <ul class="sorting">
+             <ul class="sorting-menu">
                  <li class="sorting-item">
-                     <button class="sorting-btn">ПО ЦЕНЕ</button>
+                     <a class="btn-active" href="#">ПО ЦЕНЕ</a>
                  </li>
                  <li class="sorting-item">
-                     <button class="sorting-btn">ПО ТИПУ</button>
+                     <a class="sorting-btn" href="#">ПО ТИПУ</a>
                  </li>
                  <li class="sorting-item">
-                     <button class="sorting-btn">ПО РЕЙТИНГУ</button>
+                     <a class="sorting-btn" href="#">ПО РЕЙТИНГУ</a>
                  </li>
              </ul>
              <div class="up-down-sorting">
-                 <button class="sorting-up"></button>
-                 <button class="sorting-down"></button>
+                 <a class="sorting-btn sorting-up" href="#">up</a>
+                 <a class="sorting-btn sorting-down btn-active" href="#">down</a>
              </div>
           </div>
           <ul class="sort-result-menu">
               <li class="result-menu-item">
                   <img src="img/hotel-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
                   <section class="hotel-info-container">
-                     <h3 class="hotel-info-title">Amara Resort and Spa</h3>
+                     <h3 class="hotel-info-title"><a href="#">Amara Resort and Spa</a></h3>
                       <span class="hotel-text">Гостиница</span>
                       <span class="hotel-price">ОТ 4000 Р.</span>
-                      <button class="details-btn">ПОДРОБНЕЕ</button>
-                      <button class="tobook-btn">ЗАБРОНИРОВАТЬ</button>
+                      <button class="button">ПОДРОБНЕЕ</button>
+                      <button class="button-alt">ЗАБРОНИРОВАТЬ</button>
                   </section>
                   <div class="rating-container">
                       <span class="rating">Рейтинг: 8,5</span>
@@ -106,11 +109,11 @@
               <li class="result-menu-item">
                   <img src="img/hotel-2.jpg" width="135" height="90" alt="Desert Quail Inn">
                   <section class="hotel-info-container">
-                     <h3 class="hotel-info-title">Desert Quail Inn</h3>
+                      <h3 class="hotel-info-title"><a href="#">Desert Quail Inn</a></h3>
                       <span class="hotel-text">Мотель</span>
                       <span class="hotel-price">ОТ 3000 Р.</span>
-                      <button class="details-btn">ПОДРОБНЕЕ</button>
-                      <button class="tobook-btn">ЗАБРОНИРОВАТЬ</button>
+                      <button class="button">ПОДРОБНЕЕ</button>
+                      <button class="button-alt">ЗАБРОНИРОВАТЬ</button>
                   </section>
                   <div class="rating-container">
                       <span class="rating">Рейтинг: 8,9</span>
@@ -119,13 +122,14 @@
               <li class="result-menu-item">
                   <img src="img/hotel-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
                   <section class="hotel-info-container">
-                     <h3 class="hotel-info-title">Villas at Poco Diablo</h3>
+                      <h3 class="hotel-info-title"><a href="#">Villas at Poco Diablo</a></h3>
                       <span class="hotel-text">Апартаменты</span>
                       <span class="hotel-price">ОТ 2000 Р.</span>
-                      <button class="details-btn">ПОДРОБНЕЕ</button>
-                      <button class="tobook-btn">ЗАБРОНИРОВАТЬ</button>
+                      <button class="button">ПОДРОБНЕЕ</button>
+                      <button class="button-alt">ЗАБРОНИРОВАТЬ</button>
                   </section>
                   <div class="rating-container">
+                      <div class="rating-stars"></div>
                       <span class="rating">Рейтинг: 9,2</span>
                   </div>
               </li>
@@ -136,11 +140,17 @@
    <!-- Подвал -->
 
    <footer class="main-footer container">
-       <span class="footer-sedona"><a href="#">#visitSEDONA</a></span>
+       <span class="footer-sedona">#visitSEDONA</span>
        <ul class="social-menu">
-           <li><a class="social-btn" href="#" aria-label="Twitter"></a></li>
-           <li><a class="social-btn" href="#" aria-label="Facebook"></a></li>
-           <li><a class="social-btn" href="#" aria-label="YouTube"></a></li>
+           <li>
+               <a class="social-btn button" href="#" aria-label="Twitter">Twitter</a>
+           </li>
+           <li>
+               <a class="social-btn button" href="#" aria-label="Facebook">Facebook</a>
+           </li>
+           <li>
+               <a class="social-btn button" href="#" aria-label="YouTube">YouTube</a>
+           </li>
        </ul>
        <div class="site-creator">
        <span>WEBSITE BY</span>

@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: aquamarine">
+<body>
 
   <!-- Шапка -->
 
@@ -36,8 +39,8 @@
 
       <div class="content">
           <h2 class="visually-hidden">Our features</h2>
-          <div class="features">
-              <section class="features-text">
+          <div class="features features-color">
+              <section>
                   <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
                   <b>— №1 —</b>
                   <p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
@@ -63,14 +66,16 @@
               </ul>
           </section>
           <div class="features">
-              <div class="features-image">
-                  <img src="img/features-img-2.jpg" width="800" height="400" alt="Mountains of Sedona">
+              <div class="features-color">
+                   <div class="features-image">
+                       <img src="img/features-img-2.jpg" width="800"      height="400" alt="Mountains of Sedona">
+                   </div>
+                   <section class="features-color">
+                       <h3>ТАМ ЕСТЬ Мост дьявола</h3>
+                       <b>— №2 —</b>
+                       <p>Да, по нему можно пройти! Если конечно вы      осмелитесь</p>
+                   </section>
               </div>
-              <section class="features-text">
-                  <h3>ТАМ ЕСТЬ Мост дьявола</h3>
-                  <b>— №2 —</b>
-                  <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-              </section>
               <section class="features-text">
                   <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
                   <b>— №3 —</b>
@@ -93,7 +98,7 @@
           <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <div class="search-form-container">
-             <button class="button-search">ПОИСК ГОСТИНИЦЫ В седоне</button>
+             <button class="button-search button-alt">ПОИСК ГОСТИНИЦЫ В седоне</button>
 
              <form class="search-modal" action="https://echo.htmlacademy.ru" method="post">
                 <p class="search-modal-item">
@@ -112,7 +117,7 @@
                    <label for="kids-id">Дети:</label>
                    <input type="range" name="kids" id="kids-id" value="0" step="1">
                 </p>
-                <button class="form-button" type="submit">НАЙТИ</button>
+                <button class="button form-button" type="submit">НАЙТИ</button>
              </form>
           </div>
           <div class="map">
@@ -124,11 +129,17 @@
    <!-- Подвал -->
 
    <footer class="main-footer container">
-       <span class="footer-sedona"><a href="#">#visitSEDONA</a></span>
+       <span class="footer-sedona">#visitSEDONA</span>
        <ul class="social-menu">
-           <li><a class="social-btn" href="#" aria-label="Twitter"></a></li>
-           <li><a class="social-btn" href="#" aria-label="Facebook"></a></li>
-           <li><a class="social-btn" href="#" aria-label="YouTube"></a></li>
+           <li>
+               <a class="social-btn button" href="#" aria-label="Twitter">Twitter</a>
+           </li>
+           <li>
+               <a class="social-btn button" href="#" aria-label="Facebook">Facebook</a>
+           </li>
+           <li>
+               <a class="social-btn button" href="#" aria-label="YouTube">YouTube</a>
+           </li>
        </ul>
        <div class="site-creator">
        <span>WEBSITE BY</span>
