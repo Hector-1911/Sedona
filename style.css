@@ -312,13 +312,24 @@ ul {
     margin-bottom: 20px;
 }
 
+.search-hotel {
+    text-align: center;
+}
+
 .search-hotel h2 {
+    margin-top: 55px;
+    margin-bottom: 25px;
+
     font-size: 30px;
     line-height: 36px;
 }
 
 .search-hotel p {
     line-height: 24px;
+}
+
+.search-form-container {
+    margin-top: 45px;
 }
 
 .button-search {
@@ -473,17 +484,66 @@ ul {
 
 /* Подвал */
 
+.main-footer {
+    padding: 30px 65px;
+}
+
 .footer-sedona {
+    width: 240px;
+
+    display: inline-block;
+
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .social-menu {
+    width: 150px;
+
+    display: inline-block;
+
+    margin-left: 212px;
+    margin-right: 212px;
+
     list-style: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.social-menu li {
+    display: inline-block;
+}
+
+.site-creator {
+    width: 240px;
+
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.site-creator span,
+.site-creator a {
+    vertical-align: middle;
+}
+
+.site-creator span {
+    margin-right: 8px;
+}
+
+.site-creator a {
+    margin-top: 5px;
 }
 
 .site-creator span {
     line-height: 26px;
+}
+
+.social-btn {
+    width: 46px;
+    height: 48px;
 }
 
