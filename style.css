@@ -1,3 +1,15 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.content-box-component {
+    box-sizing: content-box;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -10,7 +22,8 @@ body {
     text-transform: uppercase;
 
     background-color: #ffffff;
-    background-imag: url(img/background-photo.jpg);
+    background-image: url(img/background-photo.jpg);
+    background-position: top center;
     background-repeat: no-repeat;
 }
 
@@ -18,8 +31,27 @@ body {
     background-image: url(img/background-hotel-reg.jpg);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 a {
+    display: inline-block;
+
     text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.container {
+    width: 1200px;
+
+    margin: 0 auto;
 }
 
 .visually-hidden {
@@ -89,10 +121,40 @@ a {
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
+
+    padding: 15px 73px;
+
+    position: relative;
+}
+
+.nav-container img {
+    position: absolute;
+
+    width: 140px;
+    height: 70px;
+
+    left: 50%;
+    top: 0;
+
+    transform: translateX(-50%);
 }
 
 .nav-menu {
     list-style: none;
+}
+
+.nav-menu .nav-item {
+    display: inline-block;
+
+    margin-right: 147px;
+}
+
+.nav-menu .nav-item:nth-child(2) {
+    margin-right: 385px;
+}
+
+.nav-menu .nav-item:last-child {
+    margin-right: 0;
 }
 
 .nav-item a {
@@ -114,6 +176,41 @@ a {
 
 /* Контент */
 
+.main-present {
+    margin-top: 76px;
+    padding-bottom: 80px;
+
+    position: relative;
+}
+
+.main-present::after {
+    content: "";
+    position: absolute;
+
+    width: 1200px;
+    height: 57px;
+
+    left: 0;
+    bottom: 0;
+
+    background-image: url('img/background-decor.png');
+}
+
+.main-logo {
+    width: 458px;
+    height: 358px;
+
+    margin: 0 auto;
+}
+
+.main-info {
+    background-color: #fff;
+
+    padding: 60px 0;
+
+    text-align: center;
+}
+
 .main-info h2 {
     font-size: 21px;
     line-height: 26px;
@@ -128,6 +225,10 @@ a {
     font-weight: 400;
 }
 
+.content {
+    text-align: center;
+}
+
 .content h3 {
     font-size: 21px;
     line-height: 21px;
@@ -135,6 +236,61 @@ a {
 
 .content b {
     font-weight: 400;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.features-apointment {
+    width: 1200px;
+}
+
+.features-container {
+    display: flex;
+
+    width: 1200px;
+    height: 255px;
+}
+
+.apointment-container {
+    display: flex;
+}
+
+.features-container:first-child {
+    order: -2;
+}
+
+.features-apointment {
+    order: -1;
+}
+
+.features-item h3 {
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.features-item b {
+    display: block;
+
+    margin-bottom: 25px;
+}
+
+.features-item {
+    height: 255px;
+
+    padding-bottom: 60px;
+}
+
+.features-item,
+.features-info-item {
+    width: 400px;
+}
+
+.features-image {
+    width: 800px;
 }
 
 .features-color {
@@ -145,6 +301,15 @@ a {
 
 .features-text {
     background-color: #eeeeee;
+}
+
+.features-info-item {
+    padding-top: 155px;
+    padding-bottom: 80px;
+}
+
+.features-info-item h3 {
+    margin-bottom: 20px;
 }
 
 .search-hotel h2 {
