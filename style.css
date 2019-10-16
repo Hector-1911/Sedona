@@ -328,13 +328,44 @@ ul {
     line-height: 24px;
 }
 
-.search-form-container {
+.search-container {
+    position: relative;
+
     margin-top: 45px;
 }
 
+.search-form-container {
+    width: 570px;
+
+    margin: 0 auto;
+}
+
 .button-search {
+    width: 570px;
+
+    padding: 30px 0;
+
     font-size: 21px;
     line-height: 26px;
+}
+
+.search-modal {
+    display: none;
+
+    position: absolute;
+
+    width: 570px;
+    height: 395px;
+
+    left: 0;
+
+    z-index: 1000;
+
+    background-color: #fff;
+}
+
+.button-search:hover + .search-modal {
+    display: block;
 }
 
 .search-modal-item input,
@@ -482,35 +513,44 @@ ul {
     background-color: #f2f2f2;
 }
 
+.map-container {
+    width: 100%;
+    height: 470px;
+
+    position: relative;
+}
+
+.map {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+}
+
 /* Подвал */
 
 .main-footer {
-    padding: 30px 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 70px;
 }
 
 .footer-sedona {
     width: 240px;
 
-    display: inline-block;
-
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     text-align: center;
-    vertical-align: middle;
 }
 
 .social-menu {
     width: 150px;
 
-    display: inline-block;
-
-    margin-left: 212px;
-    margin-right: 212px;
-
     list-style: none;
     text-align: center;
-    vertical-align: middle;
 }
 
 .social-menu li {
@@ -520,9 +560,7 @@ ul {
 .site-creator {
     width: 240px;
 
-    display: inline-block;
     text-align: center;
-    vertical-align: middle;
 }
 
 .site-creator span,

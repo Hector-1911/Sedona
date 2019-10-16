@@ -33,7 +33,7 @@
           </div>
       </div>
       <section class="main-info">
-          <h2>СЕДОНА — небольшой городок в АРИЗОНЕ,заслуживающий большего!</h2>
+          <h2>СЕДОНА — небольшой городок в АРИЗОНЕ,<br>заслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <h2 class="visually-hidden">Our features</h2>
@@ -97,11 +97,32 @@
           <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <div class="search-form-container">
-             <button class="button-search button-alt">ПОИСК ГОСТИНИЦЫ В седоне</button>
+              <div class="search-container">
+                  <button class="button-search button-alt">ПОИСК ГОСТИНИЦЫ В седоне</button>
+                  <form class="search-modal" action="https://echo.htmlacademy.ru" method="post">
+                     <p class="search-modal-item">
+                        <label for="date-in-id">Дата заезда:</label>
+                        <input type="text" name="date-in" id="date-in-id" placeholder="24 Апреля 2017">
+                     </p>
+                     <p class="search-modal-item">
+                        <label for="date-out-id">Дата Выезда:</label>
+                        <input type="text" name="date-out" id="date-out-id" placeholder="4 июля 2017">
+                     </p>
+                     <p class="search-modal-item">
+                        <label for="adults-id">Взрослые:</label>
+                        <input type="range" name="adults" id="adults-id" value="2" step="1">
+                     </p>
+                     <p class="search-modal-item">
+                        <label for="kids-id">Дети:</label>
+                        <input type="range" name="kids" id="kids-id" value="0" step="1">
+                     </p>
+                     <button class="button form-button" type="submit">НАЙТИ</button>
+                  </form>
+              </div>
           </div>
       </section>
-      <div class="map">
-          <img src="img/map.jpg" width="1200" height="591" alt="Map">
+      <div class="map-container">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d13093.91485696095!2d-111.76614345980911!3d34.86932346802222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!3m2!1d34.8697395!2d-111.7609896!5e0!3m2!1sru!2sru!4v1571251906690!5m2!1sru!2sru" width="1200" height="470" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
    </main>
 
@@ -127,25 +148,5 @@
            </a>
        </div>
    </footer>
-
-             <form class="search-modal" action="https://echo.htmlacademy.ru" method="post">
-                <p class="search-modal-item">
-                   <label for="date-in-id">Дата заезда:</label>
-                   <input type="text" name="date-in" id="date-in-id" placeholder="24 Апреля 2017">
-                </p>
-                <p class="search-modal-item">
-                   <label for="date-out-id">Дата Выезда:</label>
-                   <input type="text" name="date-out" id="date-out-id" placeholder="4 июля 2017">
-                </p>
-                <p class="search-modal-item">
-                   <label for="adults-id">Взрослые:</label>
-                   <input type="range" name="adults" id="adults-id" value="2" step="1">
-                </p>
-                <p class="search-modal-item">
-                   <label for="kids-id">Дети:</label>
-                   <input type="range" name="kids" id="kids-id" value="0" step="1">
-                </p>
-                <button class="button form-button" type="submit">НАЙТИ</button>
-             </form>
 </body>
 </html>
