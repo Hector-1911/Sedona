@@ -35,6 +35,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     display: inline-block;
 
@@ -399,7 +404,29 @@ ul {
 
 /* Гостиницы */
 
+.form-filter-container {
+    padding: 30px 70px;
+}
+
+.form-group {
+    width: 240px;
+
+    margin-right: 15px;
+}
+
+.group-item label {
+    margin-left: 40px;
+}
+
+.form-hotels .form-group-price {
+    width: 320px;
+
+    margin-left: auto;
+}
+
 .form-hotels {
+    display: flex;
+
     color: #ffffff;
 }
 
@@ -434,10 +461,16 @@ ul {
 }
 
 .sorting-container {
+    position: relative;
+
     font-size: 12px;
     line-height: 18px;
 
+    padding: 30px 70px;
+
     border-bottom: 1px solid #e5e5e5;
+
+    background-color: #fff;
 }
 
 .sorting-container .sorting-result {
@@ -452,6 +485,37 @@ ul {
 
 .sorting-menu {
     list-style: none;
+
+    display: inline-block;
+}
+
+.sorting-item {
+    display: inline-block;
+
+    margin-right: 30px;
+}
+
+.sorting-container .up-down-sorting {
+    position: absolute;
+
+    right: 70px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.sorting-container span,
+.sorting-container .sorting-menu,
+.sorting-container .up-down-sorting {
+    vertical-align: middle;
+}
+
+.sorting-result {
+    margin-right: 45px;
+}
+
+.sorting-text {
+    margin-right: 35px;
 }
 
 .sorting-menu .sorting-btn {
@@ -484,15 +548,55 @@ ul {
 
 .sort-result-menu {
     list-style: none;
+
+    background-color: #fff;
 }
 
 .sort-result-menu .result-menu-item {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 30px 70px;
+
     border-bottom: 1px solid #e5e5e5;
+}
+
+.result-item-container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 425px;
+}
+
+.rating-container {
+    width: 115px;
+}
+
+.result-item-container img {
+    width: 135px;
+}
+
+.hotel-info-container {
+    width: 260px;
+}
+
+.hotel-info-container h3 {
+    margin-bottom: 13px;
+}
+
+.hotel-info-container span {
+    margin-right: 35px;
+}
+
+.hotel-info-container button {
+    margin-top: 11px;
+    margin-right: 1px;
+    padding: 3px 17px;
 }
 
 .result-menu-item h3 {
     font-size: 21px;
-    line-height: 26px;
+    line-height: 18px;
     font-weight: 700;
 }
 
@@ -509,7 +613,7 @@ ul {
     color: #cacaca;
 }
 
-.rating-container {
+.rating {
     background-color: #f2f2f2;
 }
 
@@ -535,6 +639,10 @@ ul {
     align-items: center;
 
     padding: 40px 70px;
+}
+
+.hotels-page .main-footer {
+    padding: 30px 70px;
 }
 
 .footer-sedona {
