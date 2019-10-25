@@ -15,20 +15,27 @@ body {
     margin: 0;
 
     font-family: 'PT Sans', Arial, sans-serif;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.8);
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     text-transform: uppercase;
 
     background-color: #ffffff;
-    background-image: url(img/background-photo.jpg);
+    background-image: url(../img/background-photo.jpg);
     background-position: top center;
     background-repeat: no-repeat;
 }
 
+.shadow-body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
 .hotels-page {
-    background-image: url(img/background-hotel-reg.jpg);
+    background-image: url(../img/background-hotel-reg.jpg);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,7 +65,8 @@ ul {
 }
 
 .container {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
 
     margin: 0 auto;
 }
@@ -92,6 +100,7 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
     text-align: center;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .button:focus,
@@ -115,6 +124,7 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
     text-align: center;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .button-alt:focus,
@@ -186,6 +196,12 @@ input[type="radio"].visually-hidden {
     color: #cacaca;
 }
 
+.current-nav-item {
+    display: inline-block;
+
+    margin-right: 0;
+}
+
 .nav-menu .nav-current {
     color: #766357;
 }
@@ -209,7 +225,7 @@ input[type="radio"].visually-hidden {
     left: 0;
     bottom: 0;
 
-    background-image: url('img/background-decor.png');
+    background-image: url('../img/background-decor.png');
 }
 
 .main-logo {
@@ -341,15 +357,15 @@ input[type="radio"].visually-hidden {
 }
 
 .features-info-item .housing:before {
-    background: url("img/icon-1.svg") no-repeat center center;
+    background: url("../img/icon-1.svg") no-repeat center center;
 }
 
 .features-info-item .food:before {
-    background: url("img/icon-3.svg") no-repeat center center;
+    background: url("../img/icon-3.svg") no-repeat center center;
 }
 
 .features-info-item .present:before {
-    background: url("img/icon-2.svg") no-repeat center center;
+    background: url("../img/icon-2.svg") no-repeat center center;
 }
 
 .search-hotel {
@@ -460,11 +476,11 @@ input[type="radio"].visually-hidden {
     height: 23px;
     left: 0;
     top: -2px;
-    background: url(img/checkbox-off.svg) no-repeat left center;
+    background: url(../img/checkbox-off.svg) no-repeat left center;
 }
 
 .form-group input:checked + label:before {
-    background: url(img/checkbox-on.svg) no-repeat left center;
+    background: url(../img/checkbox-on.svg) no-repeat left center;
 }
 
 .form-group input:disabled + label {
@@ -478,6 +494,7 @@ input[type="radio"].visually-hidden {
 .group-item label {
     position: relative;
     padding-left: 40px;
+    cursor: pointer;
 }
 
 .group-title {
@@ -809,14 +826,14 @@ input[type="radio"].visually-hidden {
 }
 
 .tw-btn .social-btn:before {
-    background: url(img/twitter.svg) no-repeat center center;
+    background: url(../img/twitter.svg) no-repeat center center;
 }
 
 .fb-btn .social-btn:before {
-    background: url(img/fb-icon.svg) no-repeat center center;
+    background: url(../img/fb-icon.svg) no-repeat center center;
 }
 
 .yt-btn .social-btn:before {
-    background: url(img/youtube.svg) no-repeat center center;
+    background: url(../img/youtube.svg) no-repeat center center;
 }
 
