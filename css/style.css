@@ -407,21 +407,36 @@ input[type="radio"].visually-hidden {
 
 .search-modal {
     display: none;
-
     position: absolute;
 
     width: 570px;
     height: 395px;
-
     left: 0;
+
+    padding: 55px;
 
     z-index: 1000;
 
     background-color: #fff;
 }
 
-.button-search:focus + .search-modal {
-    display: block;
+.form-item-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-item-container {
+    display: flex;
+    width: 458px;
+    justify-content: space-between;
+    margin-bottom: 54px;
+}
+
+.search-modal-item {
+    margin-bottom: 30px;
+    width: 458px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .search-modal-item input,
@@ -435,10 +450,30 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 }
 
+.search-modal-item label {
+    align-self: center;
+}
+
 .search-modal-item input {
     background-color: #f2f2f2;
+    padding: 8px 70px 8px 13px;
+    margin-left: auto;
+    width: 346px;
 
     border: none;
+}
+
+.search-item-container input {
+    width: 114px;
+}
+
+.search-item-container .search-modal-item {
+    margin-bottom: 0px;
+    width: 226px;
+}
+
+.search-item-container .search-modal-item:last-child {
+    width: 179px;
 }
 
 .search-modal-item input:hover {
@@ -451,6 +486,13 @@ input[type="radio"].visually-hidden {
     outline: none;
 
     border: 2px solid #e5e5e5;
+}
+
+.form-button {
+    width: 458px;
+    padding: 19px 0px;
+    font-size: 21px;
+    line-height: 26px;
 }
 
 /* Гостиницы */
@@ -835,5 +877,20 @@ input[type="radio"].visually-hidden {
 
 .yt-btn .social-btn:before {
     background: url(../img/youtube.svg) no-repeat center center;
+}
+
+@keyframes opacity {
+    0% {opacity: 0;}
+    25% {opacity: 0.2;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.7;}
+    100% {opacity: 1;}
+}
+
+.modal-show {
+    display: block;
+    animation-name: opacity;
+    animation-duration: 0.4s;
+    transition: animation-duration 0.4s;
 }
 
