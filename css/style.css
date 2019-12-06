@@ -455,16 +455,22 @@ input[type="radio"].visually-hidden {
 }
 
 .search-modal-item input {
-    background-color: #f2f2f2;
-    padding: 8px 70px 8px 13px;
+    padding: 7px 70px 7px 13px;
     margin-left: auto;
     width: 346px;
-
     border: none;
+    background: url("../img/calendar.svg") no-repeat 315px center;
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
 }
 
-.search-item-container input {
+.search-item-container .aduls-container,
+.search-item-container .kids-container {
     width: 114px;
+    background-color: #f2f2f2;
+    padding: 7px 0px;
+    position: relative;
+    text-align: center;
 }
 
 .search-item-container .search-modal-item {
@@ -493,6 +499,35 @@ input[type="radio"].visually-hidden {
     padding: 19px 0px;
     font-size: 21px;
     line-height: 26px;
+}
+
+.search-modal-item output {
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.counter-btn {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: no-repeat center center;
+    cursor: pointer;
+    outline: none;
+}
+
+.minus-btn {
+    left: 14px;
+    background-image: url("../img/minus-btn.jpg");
+}
+
+.plus-btn {
+    right: 14px;
+    background-image: url("../img/plus-btn.jpg");
 }
 
 /* Гостиницы */
