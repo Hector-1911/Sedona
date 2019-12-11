@@ -38,3 +38,4 @@ kidsPlus.addEventListener("click", function(evt) {
     evt.preventDefault();
     kidsCounter.value = (kidsCounter.value - 1) + 2;
 });
+

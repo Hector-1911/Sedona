@@ -575,7 +575,7 @@ input[type="radio"].visually-hidden {
 }
 
 .group-title {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .group-item:last-of-type {
@@ -586,6 +586,41 @@ input[type="radio"].visually-hidden {
     width: 320px;
 
     margin-left: auto;
+}
+
+.form-price-container {
+    position: relative;
+    display: flex;
+    width: 320px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 4px 65px;
+    margin-bottom: 10px;
+}
+
+.form-price-container .price-container-item:last-child {
+    margin-left: auto;
+}
+
+.form-price-container::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    width: 2px;
+    height: 18px;
+    background-color: #fff;
+}
+
+.form-group-price {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group-price input {
+    width: 100%;
 }
 
 .form-hotels {
@@ -606,6 +641,11 @@ input[type="radio"].visually-hidden {
 
 .form-hotels button {
     font: inherit;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 5px 35px;
 
     color: #ffffff;
     background-color: transparent;
@@ -616,6 +656,7 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     text-align: center;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .form-hotels button:hover,
